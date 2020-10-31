@@ -1,6 +1,6 @@
 {
   "name": "discordjs-prompter",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Prompt for a user response using reactions or a message.",
   "main": "./dist/index.js",
   "scripts": {
@@ -25,11 +25,11 @@
     "question",
     "confirm"
   ],
-  "author": "Joaquim Neto",
+  "author": "Joaquim Neto & LuckyPass",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/joaquimnet/discordjs-prompter.git"
+    "url": "https://github.com/LuckyPass/discordjs-prompter.git"
   },
   "homepage": "https://github.com/joaquimnet/discordjs-prompter",
   "bugs": "https://github.com/joaquimnet/discordjs-prompter/issues",
