@@ -72,7 +72,7 @@ export const reaction = (
             if (channel instanceof DMChannel) {
               resolve('yes');
             } else {
-              message.delete().then(() => resolve('yes'));
+              resolve('yes');
               return;
             }
           } else {
@@ -81,7 +81,7 @@ export const reaction = (
               resolve('no');
               return;
             }
-            message.delete().then(() => resolve('no'));
+            resolve('no');
           }
         })
         .catch(() => {
@@ -90,7 +90,7 @@ export const reaction = (
             resolve(false);
             return;
           }
-          message.delete().then(() => resolve(false));
+           resolve(false);
         });
     });
   });
