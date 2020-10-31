@@ -56,19 +56,18 @@ export const message = (
           errors: ['time'],
         })
         .then(collected => {
-          // Clear the prompt and resolve with the result
-          message.delete().then(() => resolve(collected));
+          // Eesolve with the result
+          resolve(collected);
         })
         .catch(collected => {
-          // Clear the prompt and resolve with the result
+          // Resolve the result
           if (!(channel instanceof DMChannel)) {
-            message.delete().then(() => {
+            
               if (options.failIfTimeout) {
                 resolve(false);
               } else {
                 resolve(collected);
               }
-            });
           }
 
           // just resolve with the result
